@@ -1,12 +1,12 @@
 *{
     box-sizing: border-box;
-    font-family: "Manrope", "Manrope Placeholder", sans-serif;
-    font-size: 16px;
     margin: 0;
     padding: 0;
 
 }
 body{
+    font-size: 16px;
+    font-family: "Manrope", "Manrope Placeholder", sans-serif;
     color: white;
     background-color: black;
 }
@@ -21,13 +21,17 @@ a{
 .wrapper {
     width: 80%;
     margin: auto;
-    padding-top: 80px;
+    padding-top: 5em;
+}
+header,
+footer {
+    text-align: center;
 }
 .logo {
     width: 40px;
     height: 40px;
-    padding: 6px;
-    margin: 20px auto;
+    padding: 0.3em;
+    margin: 1.1em auto;
     background-color: #ffffff26;
     border-radius: 50%;
 }
@@ -36,25 +40,18 @@ a{
     max-width: 660px;
     width: 100%;
     text-align: center;
-    font-size: 48px;
+    font-size: 3em;
     letter-spacing: -2px;
     margin: 0 auto;
 }
 
-
-/*Button*/
-.block-btm {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin: 20px 0 60px 0 ;
-}
 .btn {
+    display: inline-block;
     width: 90px;
     height: 40px;
-    font-size: 16px;
+    margin: 1.1em 0.8em 4em 0;
+    padding: 0.8em;
     font-weight: bold;
-    padding: 10px;
     text-align: center;
     border-radius: 20px;
     cursor: pointer;
@@ -72,22 +69,19 @@ a{
     color: #fff;
     background-color: #ffffff26;
 }
-/*^^^^Button^^^^*/
 
 .main-content {
-    width: 1000px;
-    display: grid;
-    gap: 40px;
-    grid-auto-rows: min-content;
-    grid-template-columns: repeat(2, minmax(100px, 1fr));
-    grid-template-rows: repeat(2, min-content);
-    height: min-content;
-    justify-content: center;
-    max-width: 100%;
-    margin: auto;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
 }
 .product {
+    display: inline-block;
+    width: 40%;
+    margin: 1.2em;
     cursor: pointer;
+    vertical-align: top;
+    text-align: initial;
 }
 .product:hover .product-img{
     opacity:0.6;
@@ -101,30 +95,26 @@ a{
     border-radius: 24px;
     transition: all 0.3s;
 }
-/* :hover {
-
-} */
 
 .product-title {
     margin-top: 20px;
     font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .product-text {
     color: #999999;
     font-weight: 400;
 }
 
-footer {
-    text-align: center;
-}
 
 .social-networks {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    display: inline-block;
     margin-top: 10em;
 }
 .social-networks-item a {
+    margin-right: 1.1em;
     font-weight: 700;
 }
 
@@ -134,7 +124,7 @@ footer {
 }
 
 .by-name {
-    display: inline-block;
+    display: block;
     color: #999999;
     margin: 2em 0 10em 0;
 }
